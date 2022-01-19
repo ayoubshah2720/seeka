@@ -1,0 +1,169 @@
+.mainUniversity{
+    height: 100%;
+    width: 100%;
+    min-height: 1000px;
+    margin-top: -16px;
+    background-color: #EEEEEE;
+
+    .resultsFound{
+        padding-top: 30px;
+        margin-left: 120px;
+        // opacity: .7;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .iconsInformation{
+        display: flex;
+    .universityDetail{
+        margin-left: 15px;
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0px;
+            margin-top: 20px;
+        }
+        
+        h4{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+            line-height: 1.5;
+            margin: 0px;
+            margin-top: 8px;
+            // opacity: 0.8;
+        }
+    }
+    .savedIcon{
+        margin-left: 150px;
+        .dotIcon{
+            height: 20px;
+        }
+
+        .iconSave{
+            height: 20px;
+            margin-top: 15px;
+            margin-right: 35px;
+        }
+    }
+}
+    .universityAllData{
+        background-color: #fff;
+        width: 950px;
+        height: 265px;
+        display: flex;
+        border-radius: 5px;
+        margin-left: 120px;
+        margin-top: 15px;
+        .universityImage{
+            img{
+                width: 60px;
+                height: 60px;
+                border: 1px solid #c5c1c1;
+                border-radius: 35px;
+                margin-top: 17px;
+                margin-left: 20px;
+             }
+        }
+    }
+
+    .scholarshipDetail{
+        display: flex;
+        h4{
+            padding: 0px;
+            margin: 0px;
+            margin-top: 10px;
+        }
+        p{
+            padding: 0px;
+            margin: 0px;
+            padding-top: 5px;
+        }
+    }
+    .dateDiv{
+        display: flex;
+        width: 300px;
+        height: 55px;
+        .dateTitle{
+            .dateDescription{
+                // opacity: 0.7;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                font-weight: lighter;
+                line-height: 40px;
+                padding: 0px;
+                margin: 0px;
+                margin-top: -16px;
+            
+            }
+            h4{
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 40px;
+                word-spacing: 2px;
+            }
+        }
+    }
+    .icon{
+        i{
+            color: #6e93b5;
+            font-size: 25px;
+            margin-top: 20px;
+            padding: 0px 10px;
+        }
+    }
+
+    .scholarshipValidity{
+        display: flex;
+        margin-top: 10px;
+
+        h4{
+            padding: 0px;
+            margin: 0px;
+            margin-top: 10px;
+        }
+        p{
+            padding: 0px;
+            margin: 0px;
+            padding-top: 5px;
+        }
+    }
+
+    .universityDescription{
+        width: 600px;
+        margin-top: 8px;
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: lighter;
+            line-height: 20px;
+            margin: 0px;
+            // opacity: 0.6;
+        }
+    }
+
+    .savedIcon{
+        margin-left: 10px;
+        .dotIcon{
+            height: 20px;
+        }
+
+        .iconSave{
+            height: 20px;
+            margin-top: 15px;
+            margin-right: 35px;
+        }
+    }
+.paginator{    
+    width: 89%;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 118px;
+    border-radius: 5px;
+}
+}

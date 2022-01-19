@@ -1,0 +1,92 @@
+<div class="mainUniversity">
+    <p class="resultsFound"> We found <b>{{universityLists.length}}</b> Results </p>
+    <div class="universityAllData" *ngFor="let item of universityLists | paginate: { itemsPerPage: 5, currentPage: p }">
+        <div class="universityImage">
+            <img src="{{item.image}}" alt="">
+        </div>
+        <div class="universityDetailMain">
+            <div class="iconsInformation">
+                <div class="universityDetail">
+                    <h1> {{item.title}} </h1>
+                    
+                <h4>
+                    Provided by {{item.universityName}}
+                </h4>
+                <div class="universityDescription">
+                    <p>
+                        {{item.detail}}
+                    </p>
+                </div>
+                </div>
+                <div class="savedIcon">
+                    <img class="iconSave" src="../../assets/icons/Save-ribbon.png" alt="">
+    
+                <img class="dotIcon" src="../../assets/icons/3-vertical-dots.png" alt="">
+                </div>
+            </div>
+
+            <div class="scholarshipDetail">
+                <div class="dateDiv">
+                    <div class="icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <div class="dateTitle">
+                        <h4> {{item.deadline}} </h4>
+                        <p class="dateDescription">Deadline</p>
+                    </div>
+                </div>
+
+                <div class="dateDiv">
+                    <div class="icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <div class="dateTitle">
+                        <h4> {{item.validity}} </h4>
+                        <p class="dateDescription">Validity</p>
+                    </div>
+                </div>
+
+                <div class="dateDiv">
+                    <div class="icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <div class="dateTitle">
+                        <h4> USD {{item.amount}} per year </h4>
+                        <p class="dateDescription">Amount</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scholarshipValidity">
+                <div class="dateDiv">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="dateTitle">
+                        <h4> {{item.studyLevel}} </h4>
+                        <p class="dateDescription">Study Level</p>
+                    </div>
+                </div>
+
+                <div class="dateDiv">
+                    <div class="icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <div class="dateTitle">
+                        <h4> {{item.inTake}} </h4>
+                        <p class="dateDescription">Intake(s)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="savedIcon">
+            <img class="iconSave" src="../../assets/icons/Save-ribbon.png" alt="">
+
+            <img class="dotIcon" src="../../assets/icons/3-vertical-dots.png" alt="">
+        </div> -->
+    </div>
+    <div class="paginator">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+</div>
